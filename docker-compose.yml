@@ -20,7 +20,7 @@ services:
     image: ghcr.io/socfortress/waf-caddy:${WAF_IMAGE_TAG:-latest}
     container_name: caddy-waf
     ports:
-      - "80:80"
+      - "80:88"
       - "443:443"
     # Lets the WAF proxy to apps running on the Docker host (e.g. an nginx
     # upstream) via http://host.docker.internal:<port>. See demo/README.md.
