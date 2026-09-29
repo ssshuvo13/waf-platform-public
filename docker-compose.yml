@@ -21,7 +21,7 @@ services:
     container_name: caddy-waf
     ports:
       - "88:80"
-      - "443:443"
+      - "444:443"
     # Lets the WAF proxy to apps running on the Docker host (e.g. an nginx
     # upstream) via http://host.docker.internal:<port>. See demo/README.md.
     extra_hosts:
